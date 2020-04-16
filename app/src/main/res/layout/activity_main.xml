@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/image3"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:alpha="0.1"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:id="@+id/loginTextView"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimary"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loginTextView"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="70dp"
+        android:id="@+id/usernameEditText"
+        android:background="@drawable/input_shape"
+        android:padding="15dp"
+        android:hint="username..."
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:singleLine="true"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/usernameEditText"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="70dp"
+        android:id="@+id/passwordEditText"
+        android:background="@drawable/input_shape"
+        android:padding="15dp"
+        android:hint="password..."
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/passwordEditText"
+        android:id="@+id/reset_password_txt"
+        android:layout_marginTop="10dp"
+        android:text="forget password?"
+        android:padding="3dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="#710FFFFF"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reset_password_txt"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_shape"
+        android:text="Login"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/login_btn"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_shape_signup"
+        android:text="Sign Up"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/btn_signup"
+        />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_signup"
+        android:layout_marginTop="10dp"
+        android:id="@+id/divider"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="OR"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/divider_txt"
+            android:layout_margin="5dp"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/divider_txt"
+            android:background="@color/colorAccent"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/divider_txt"
+            android:background="@color/colorAccent"
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_shape_phone"
+        android:drawableLeft="@drawable/ic_phone_auricular_with_high_volume"
+        android:paddingLeft="10dp"
+        android:text="Phone"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/btn_phone"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_phone"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_shape_facebook"
+        android:drawableLeft="@drawable/ic_icons8_facebook_f"
+        android:paddingLeft="10dp"
+        android:text="Facebook"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/btn_facebook"
+        />
+
+</RelativeLayout>
